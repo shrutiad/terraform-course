@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "ap-southeast-1"
 }
 
 resource "aws_instance" "ec2_demo" {
-  ami           = "ami-079b5e5b3971bd10d"
+  ami           = "ami-0e64281826ea08b9e"
   instance_type = "t2.micro"
   tags = {
-    Name = "Created_By_Terraform"
+    Name = "Created_By_Terraform/jenkins"
   }
 }
